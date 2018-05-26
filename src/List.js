@@ -17,7 +17,8 @@ class List extends Component {
   render() {
     return (
     	<div className = "container">
-        <a href="www.google.ca"> <input type="radio" name="fancy" autofocus value="Food" id="food" onkeydown="onKeyDown(id, event)" onkeyup="onKeyUp()"/>
+      <form>
+        <input type="radio" name="fancy" autofocus value="Food" id="food" onkeydown="onKeyDown(id, event)" onkeyup="onKeyUp()"/>
         <input type="radio" name="fancy" value="Entertainment" id="entertainment" onkeydown="onKeyDown(id, event)" onkeyup="onKeyUp()"/>
         <input type="radio" name="fancy" value="Medication" id="medication" onkeydown="onKeyDown(id, event)" onkeyup="onKeyUp()"/>
         <input type="radio" name="fancy" value="Conversation" id="conversation" onkeydown="onKeyDown(id, event)" onkeyup="onKeyUp()"/>
