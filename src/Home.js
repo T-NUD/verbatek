@@ -4,7 +4,8 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <h2>Welcome to VerbaTech.</h2>
+        <span> <h2 className ="typewriter"> Welcome to VerbaTech. We are disruptive. We are innovative. We are Waterloo students.</h2></span>
+        <div className = "fade-animation">
         <h3>Handup has arrived:</h3>
         <p> Through the utilization of Myo gesture mapping, the HandUp software is an easily accessible interface that provides the tools necessary for basic communication for the verbally-impaired.
 
@@ -20,6 +21,11 @@ Instead, VerbaTech's HandUp software provides an easy interface for gesture cont
   <li>Selective mutism</li>
   <li>Autism</li>
 </ul>
+      <h3>How it works:</h3>
+      <p> 
+      Using a .tech domain, we have created a website that contains the user-friendly interface for the communication tools. Using OKTA, we have connected this website to the user's other accounts so that when you log onto OKTA, you can seamlessly log in to the HandUp Software. Once logged in, the user is then brought to their list of word categories. Examples of this include categories such as food, drinks, names, entertainment. They also have the option to add more categories. Once a category is selected, they are brought to their list of words for that category. An example for the entertainment category would be "Turn TV On", "Turn TV Off", "Sports" and "News". They also have the option to add more words to each category.
+      </p>
+      </div>
       </div>
     );
   }
