@@ -4,7 +4,7 @@ import "./List.css";
 class List extends Component {
   render() {
     return (
-    	<div className = "box">
+    	<div className = "container">
       <form>
         <input type="radio" name="fancy" autofocus value="Food" id="food" onkeydown="onKeyDown(event)" onkeyup="onKeyUp()"/>
         <input type="radio" name="fancy" value="Entertainment" id="entertainment" onkeydown="onKeyDown(event)" onkeyup="onKeyUp()"/>
