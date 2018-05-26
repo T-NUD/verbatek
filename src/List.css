@@ -7,6 +7,10 @@ body {
     overflow: hidden;
 }
 
+.emphasis {
+	color: #D35400;
+	
+}
 
 .container {
 	overflow: hidden;
@@ -17,7 +21,8 @@ label {
 	color: #fff;
 	transition: transform 400ms ease-out;
 	display: inline-block;
-	width: 100vw;
+	min-height: 100%;
+	width: 111vw;
 	height: 100vh;
 	position: relative;
 	z-index: 1;

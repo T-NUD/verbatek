@@ -16,9 +16,9 @@ class Main extends Component {
         <div>
           <h1>Verbatek</h1>
           <ul className="header">
-            <li><NavLink exact to="/">Home</NavLink></li>
-            <li><NavLink to="/list">Lists</NavLink></li>
-            <li><NavLink to="/contact">Contact</NavLink></li>
+            <li><NavLink className = "head-font" exact to="/">Home</NavLink></li>
+            <li><NavLink className = "head-font" to="/list">Lists</NavLink></li>
+            <li><NavLink className = "head-font" to="/contact">Contact</NavLink></li>
           </ul>
           <div className="content">
             <Route exact path="/" component={Home}/>
