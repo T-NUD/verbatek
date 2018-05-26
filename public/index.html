@@ -7,6 +7,15 @@
     <title>Verbatek</title>
     <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+    <script>
+        function onKeyDown(event) {
+            var x = event.key; 
+            document.getElementById("print").innerHTML = x + "<br/>";
+        }
+        function onKeyUp() {
+            document.getElementById("print").innerHTML = "Nothing" + "<br/>";
+        }
+    </script>
   </head>
   <body>
     <div id="root"></div>
