@@ -19,7 +19,7 @@ class List extends Component {
     	<div className = "container">
       <form>
 
-        <a window.location.href='google.ca'> <input type="radio" name="fancy" autofocus value="Food" id="food"/>
+        <a href='google.ca'> <input type="radio" name="fancy" autofocus value="Food" id="food"/>
         </a>
         <input type="radio" name="fancy" value="Entertainment" id="entertainment" onkeydown="onKeyDown(id, event)" onkeyup="onKeyUp()"/>
         <input type="radio" name="fancy" value="Medication" id="medication" onkeydown="onKeyDown(id, event)" onkeyup="onKeyUp()"/>
