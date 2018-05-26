@@ -4,12 +4,13 @@ import "./List.css";
 function onKeyDown(id, event) {
   var x = event.key;
   //13 is enter
-  if (x == 13){
-    if (id == "food"){
-      
+  if (x === 13){
+    if (id === "food"){
+      //
     }
   }
 }
+
 function onKeyUp() { }
 
 class List extends Component {
@@ -17,7 +18,7 @@ class List extends Component {
     return (
     	<div className = "container">
       <form>
-        <a href="www.google.ca"> <input type="radio" name="fancy" autofocus value="Food" id="food" onkeydown="onKeyDown(id, event)" onkeyup="onKeyUp()"/>
+        <a href="www.google.ca"> <input type="radio" name="fancy" autofocus value="Food" id="food"/>
         </a>
         <input type="radio" name="fancy" value="Entertainment" id="entertainment" onkeydown="onKeyDown(id, event)" onkeyup="onKeyUp()"/>
         <input type="radio" name="fancy" value="Medication" id="medication" onkeydown="onKeyDown(id, event)" onkeyup="onKeyUp()"/>
