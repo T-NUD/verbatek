@@ -7,21 +7,13 @@ body {
     overflow: hidden;
 }
 
-.emphasis {
-	color: #D35400;
-	
-}
-
-.container {
-	overflow: hidden;
-}
-
 label {
-	background: #444;
-	color: #fff;
+	background-image: url("https://bit.ly/2IMqIeO");
+	color: black;
+
 	transition: transform 400ms ease-out;
 	display: inline-block;
-	min-height: 100%;
+    min-height: 100%;
 	width: 111vw;
 	height: 100vh;
 	position: relative;
@@ -42,10 +34,6 @@ input {
 	position: absolute;
 }
 
-.box {
-
-}
-
 .keys {
 	position: fixed;
 	z-index: 10;
@@ -53,11 +41,26 @@ input {
 	left: 0;
 	right: 0;
 	padding: 1rem;
-	color: #fff;
+	color: #2471A3;
 	text-align: center;
 	transition: all 300ms linear;
-	opacity: 0;
+	opacity: 1;
 }
+
+.map {
+	position: fixed;
+	z-index: 15;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 2rem;
+	color: #2471A3;
+	text-align: center;
+	transition: all 300ms linear;
+	opacity: 1;
+	font-size: 1rem;
+}
+
 
 input:focus ~ .keys {
 	opacity: 0.8;
@@ -89,17 +92,29 @@ input:nth-of-type(4):checked ~ label {
 label {
 	background: #444;
 	background-size: cover;
-	font-size: 3rem;
+	font-size: 5rem;
 }
 
-label[for="food"],
+label[for="conversation"] {
+	background-image: url("https://images.pexels.com/photos/1050297/pexels-photo-1050297.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+
+}
+
+label[for="entertainment"] {
+	background-image: url("https://images.pexels.com/photos/265685/pexels-photo-265685.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350");
+}
+
+label[for="food"] {
+	background-image: url("https://bit.ly/2kqTi6L");
+}
+
 label[for="medication"] {
-	background: #cc0000;
+	background-image: url("https://bit.ly/2IRR3Em");
 }
 
 label:before,
 label:after {
-	color: white;
+	color: #2471A3;
 	display: block;
 	background: rgba(255,255,255,0.2);
 	position: absolute;
