@@ -12,26 +12,19 @@
     
 <body>
     <form>
-        <input type="radio" name="fancy" autofocus value="Food" id="food" />
-        <input type="radio" name="fancy" value="Entertainment" id="entertainment" />
-        <input type="radio" name="fancy" value="Medication" id="medication" />
-        <input type="radio" name="fancy" value="Conversation" id="conversation" />
-        <input type="radio" name="fancy" value="Input" id="input" />
-        <label for="food">&#9827; Food</label>
-        <label for="entertainment">&#9829; Entertainment</label>
-        <label for="medication">&#9824; Medication</label>
-        <label for="conversation">&#9830; Conversation</label>
+        <input type="radio" name="fancy" autofocus value="Food" id="food" onkeydown="onKeyDown(event)" onkeyup="onKeyUp()"/>
+        <input type="radio" name="fancy" value="Entertainment" id="entertainment" onkeydown="onKeyDown(event)" onkeyup="onKeyUp()"/>
+        <input type="radio" name="fancy" value="Medication" id="medication" onkeydown="onKeyDown(event)" onkeyup="onKeyUp()"/>
+        <input type="radio" name="fancy" value="Conversation" id="conversation" onkeydown="onKeyDown(event)" onkeyup="onKeyUp()"/>
+        <input type="radio" name="fancy" value="Input" id="input" onkeydown="onKeyDown(event)" onkeyup="onKeyUp()"/>
+        <label for="food">Food</label>
+        <label for="entertainment">Entertainment</label>
+        <label for="medication">Medication</label>
+        <label for="conversation">Conversation</label>
         <div class="keys">Use left and right motions to navigate</div>
     </form>
 
-
-    <p>Press a key on the keyboard in the input field.</p>
-
-    <input type="text" size="40" onkeydown="onKeyDown(event)" onkeyup="onKeyUp()">
-    
-    <p>
-        <strong>Note:</strong> The key property is not supported in Safari or IE 8 and earler versions.
-    </p>
+    <input type="text" onkeydown="onKeyDown(event)" onkeyup="onKeyUp()">
 
     <p id="print"></p>
 

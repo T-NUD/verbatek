@@ -12,7 +12,7 @@ label {
 	color: #fff;
 	transition: transform 400ms ease-out;
 	display: inline-block;
-  min-height: 100%;
+    min-height: 100%;
 	width: 100vw;
 	height: 100vh;
 	position: relative;
