@@ -8,7 +8,8 @@
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.4",
     "react-scrollable-list": "^1.2.0",
-    "react-windowed-list": "^3.0.1"
+    "react-windowed-list": "^3.0.1",
+    "surge": "^0.20.1"
   },
   "scripts": {
     "start": "react-scripts start",

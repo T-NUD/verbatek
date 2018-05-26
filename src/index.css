@@ -1,10 +1,11 @@
 body {
   background-color: #18121E;
-  padding: 20px;
+  padding: 2rem;
   margin: 0;
+  font-family: 'Noto Sans', sans-serif;
 }
-h1, h2, p, ul, li {
-  font-family: sans-serif;
+h1 {
+  font-family: 'Orbitron', sans-serif;
 }
 
 h1 {
@@ -28,7 +29,7 @@ ul.header li a {
 }
 .content {
   background-color: #EAC67A;
-  padding: 20px;
+  padding: 2rem;
 }
 .content h2 {
   padding: 0;
