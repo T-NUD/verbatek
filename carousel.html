@@ -6,10 +6,10 @@
 
 <body>
     <form>
-        <input type="radio" name="fancy" autofocus value="Food" id="food" onkeydown="onKeyDown(event)" onkeyup="onKeyUp()"/>
-        <input type="radio" name="fancy" value="Entertainment" id="entertainment" onkeydown="onKeyDown(event)" onkeyup="onKeyUp()"/>
-        <input type="radio" name="fancy" value="Medication" id="medication" onkeydown="onKeyDown(event)" onkeyup="onKeyUp()"/>
-        <input type="radio" name="fancy" value="Conversation" id="conversation" onkeydown="onKeyDown(event)" onkeyup="onKeyUp()"/>
+        <input type="radio" name="fancy" autofocus value="Food" id="food" onkeydown="onKeyDown(id, event)" onkeyup="onKeyUp()"/>
+        <input type="radio" name="fancy" value="Entertainment" id="entertainment" onkeydown="onKeyDown(id, event)" onkeyup="onKeyUp()"/>
+        <input type="radio" name="fancy" value="Medication" id="medication" onkeydown="onKeyDown(id, event)" onkeyup="onKeyUp()"/>
+        <input type="radio" name="fancy" value="Conversation" id="conversation" onkeydown="onKeyDown(id, event)" onkeyup="onKeyUp()"/>
         <input type="radio" name="fancy" value="Input" id="input" onkeydown="onKeyDown(event)" onkeyup="onKeyUp()"/>
         <label for="food">Food</label>
         <label for="entertainment">Entertainment</label>
@@ -17,15 +17,13 @@
         <label for="conversation">Conversation</label>
         <div class="keys">Use left and right motions to navigate</div>
     </form>
-    <p id="print"></p>
 
     <script>
-        function onKeyDown(event) {
-            var x = event.key; 
-            document.getElementById("print").innerHTML = x + "<br/>";
+        function onKeyDown(id, event) {
+            var x = event.key;
+            
         }
         function onKeyUp() {
-            document.getElementById("print").innerHTML = "Nothing" + "<br/>";
         }
     </script>
 
