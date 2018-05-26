@@ -3,18 +3,21 @@
 <body>
     <p>Press a key on the keyboard in the input field.</p>
 
-    <input type="text" size="40" onkeydown="myFunction(event)">
+    <input type="text" size="40" onkeydown="onKeyDown(event)" onkeyup="onKeyUp()">
     
     <p>
         <strong>Note:</strong> The key property is not supported in Safari or IE 8 and earler versions.
     </p>
 
-    <p id="demo"></p>
+    <p id="print"></p>
 
     <script>
-        function myFunction(event) {
-            var x = event.key;
-            document.getElementById("demo").innerHTML = "The pressed key was: " + x + "<br/>";
+        function onKeyDown(event) {
+            var x = event.key; 
+            document.getElementById("print").innerHTML = x + "<br/>";
+        }
+        function onKeyUp() {
+            document.getElementById("print").innerHTML = "Nothing" + "<br/>";
         }
     </script>
 </body>
